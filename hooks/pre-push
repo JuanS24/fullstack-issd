@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#
+# use --no-verify flag to avoid this script
+echo "Running Grunt lint..."
+
+grunt lint
+RESULT1=$?
+
+[ $RESULT1 -ne 0 ] && exit 1
+
+exit 0
